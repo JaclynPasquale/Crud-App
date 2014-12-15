@@ -15,12 +15,12 @@ angular.module('placesApp')
     controller: 'PlacesCtrl',
     controllerAs: 'pCtrl'
   })
-  .when('/id:', {
+  .when('/:id', {
     templateUrl: 'views/show.html',
-    controller: 'PlacesCtrl',
-    controllerAs: 'pCtrl'
+    controller: 'ShowController',
+    controllerAs: 'showCtrl'
   })
-  .when('/id:edit', {
+  .when('/:id/edit', {
     templateUrl: 'views/form.html',
     controller: 'PlacesCtrl',
     controllerAs: 'pCtrl'

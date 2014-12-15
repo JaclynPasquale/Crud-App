@@ -46,8 +46,16 @@
 
   })
 
-  .controller('ShowController', function(){
-
-  })
+  .controller('ShowController', function($routeParams, $http){
+    var vm = this;
+    var id = $routeParams.id;
+    $http.get('https://crud-app-nss.firebaseio.com/' + id + '.json')
+    .success(function(data){
+      vm.place = data;
+    })
+    .error(function(err){
+      console.log(err);
+    })
+  });
 
 })();
