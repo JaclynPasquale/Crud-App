@@ -21,7 +21,7 @@
   vm.addNewPlace = function(data){
     $http.post('https://crud-app-nss.firebaseio.com/.json', vm.newPlace)
     .success(function(){
-      vm.places[data.state] = vm.newPlace;
+      vm.places[data] = vm.newPlace;
       vm.newPlace = "";
     })
     .error(function(err){
