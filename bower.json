@@ -1,0 +1,20 @@
+{
+  "name": "Crud-App",
+  "version": "0.0.0",
+  "homepage": "https://github.com/JaclynPasquale/Crud-App",
+  "authors": [
+    "jaclynpasquale <jaclynpasquale@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1"
+  }
+}
