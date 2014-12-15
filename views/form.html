@@ -1,0 +1,17 @@
+<form name="myForm" >
+  <div class="form-group">
+    <label class="control-label">State</label>
+    <input class="form-control" type="text" ng-model="pCtrl.newPlace.state" required>
+  </div>
+  <div class="form-group" >
+    <label class="control-label">City</label>
+    <input class="form-control" type="text" ng-model="pCtrl.newPlace.city" required>
+  </div>
+  <div class="form-group" >
+    <label class="control-label">Image Url</label>
+    <input class="form-control" type="Url" ng-model="pCtrl.newPlace.image">
+  </div>
+  <div>
+    <input type="submit" value="Add a Place" class="btn btn-primary" ng-click="pCtrl.addNewPlace()"/>
+  </div>
+</form>

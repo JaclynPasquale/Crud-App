@@ -1,0 +1,12 @@
+li{
+  list-style: none;
+  text-decoration: none;
+}
+img {
+  height: 150px;
+  margin: 5px;
+}
+.btn {
+  margin: 5px;
+  float: right;
+}

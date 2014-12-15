@@ -1,0 +1,23 @@
+<table class="table table-hover row">
+  <tr class="col-md-6" ng-repeat="(placeId, place) in pCtrl.places">
+    <td>
+      <img ng-src="{{place.image}}"/>
+    </td>
+    <td>
+        <ul>
+          <li>
+            <h4>{{place.state}}</h4>
+          </li>
+          <li>
+            {{place.city}}
+          </li>
+        </ul>
+
+      </td>
+      <td>
+        <button class="btn btn-danger" ng-click="pCtrl.deletePlace(placeId)">Delete</button>
+        <a href="/#/{{placeId}}" class="btn btn-primary">Show</a>
+        <a href="/#/{{placeId}}/edit" class="btn btn-info">Edit</a>
+      </td>
+    </tr>
+</table>
